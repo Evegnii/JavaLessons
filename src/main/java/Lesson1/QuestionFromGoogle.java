@@ -1,4 +1,4 @@
-// Вопрос заданный на последнем интервью
+package Lesson1;// Вопрос заданный на последнем интервью
 
 public class QuestionFromGoogle {
 

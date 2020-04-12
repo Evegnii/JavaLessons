@@ -35,7 +35,7 @@ public class Animal {
             return false;
         }
         Animal animal = (Animal) a2;  // Эту строку понял частично
-        return this.a== animal.a|| (this.a== animal.a && this.b == animal .b);   // сравниваем содержимое классов a2 c полем конструктора
+        return this.a== animal.a && this.b == animal .b ;   // сравниваем содержимое классов a2 c полем конструктора
     }
 
 

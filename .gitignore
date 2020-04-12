@@ -1,0 +1,38 @@
+# .idea# Compiled source #
+###################
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.xml
+/Users/esirot/IdeaProjects/JavaLessons2/.idea/
+/Users/esirot/IdeaProjects/JavaLessons2/target/
+.idea/
+/.idea/workspace.xml
+
+target/classes/Lesson2/Animal.class
+target/classes/Lesson2/PlayWith_equalsMethod.class
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+/.idea/
+/target/
