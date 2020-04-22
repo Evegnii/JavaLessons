@@ -27,7 +27,7 @@ public class DoubleLinkedList {
     }
 
     //Добавление елемента после указонного
-    public void insertAfter(Node prev_Node, int new_data) {
+    public void insertAfter(Node prev_Node, int new_data) {    //не знаю как убрать Node из параметров ???? или же как написать эту ссылку
         if (prev_Node == null) {
             System.out.println("The given previous node cannot be NULL ");
             return;
@@ -58,8 +58,8 @@ public class DoubleLinkedList {
         new_node.prev = last; // тоже не понятно
     }
 
-    //Удаление элемента (в данном варианте почти уверен что есть какая то оптимизация для двойного листа)
-    public void deleteNode(Node head_ref, Node del) {
+    //Удаление элемента
+    public void deleteNode(Node head_ref, Node del) {   //не знаю как убрать Node из параметров ????
         if (head == null || del == null) {
             return;
         }
@@ -82,8 +82,51 @@ public class DoubleLinkedList {
         return;
     }
 
+    //Вывод листа
+    public void printList() {
+        Node head = this.head;
+        while (head != null) {
+            System.out.print(head.data + ", ");
+            head = head.next;
+        }
+    }
 
-}
+    public void printListReverse() {
+        Node head = this.head;
+        Node tail = null;
+        while (head != null) {
+
+            tail = head;
+            head = head.next;
+
+        }
+        while (tail != null) {
+            System.out.print(tail.data + ", ");
+            tail = tail.prev;
+        }
+    }
+
+    public void printFromValue(int value) {   //не получается
+        Node head = this.head;
+        Node helper=null;
+        while (head != null && head.data == value) {
+                head = head;
+                head = head.next;
+            }
+        while (helper!=null){
+            System.out.println("head at this point "+head.data);
+            helper=helper.next;
+        }
+
+
+
+        }
+    }
+
+
+
+
+
 
 
 

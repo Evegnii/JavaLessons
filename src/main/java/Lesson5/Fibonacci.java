@@ -8,7 +8,7 @@ public class Fibonacci {
     }
 
     public static void main(String args[]) {
-        int n = 9;
+        int n = 25  ;
         System.out.println(fib(n));
     }
 }
