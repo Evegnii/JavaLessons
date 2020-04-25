@@ -9,11 +9,14 @@ public class Main {
         dll.push(3);
         dll.push(4);
         dll.append(12);
+
        // dll.printList();
         /*System.out.println();
         dll.printListReverse();
+        */
 
-        dll.printFromValue(2);*/
+
+        dll.printFromValue(2);
         System.out.println();
         dll.printFromValue(3);
 

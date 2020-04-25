@@ -110,7 +110,7 @@ public class DoubleLinkedList {
         Node head = this.head;
         Node helper=null;
         while (head != null && head.data == value) {
-                head = head;
+                helper = head;
                 head = head.next;
             }
         while (helper!=null){
